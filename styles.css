@@ -71,6 +71,7 @@ nav{
 }
 .nav-link {
   text-decoration: none;
+  align-items: center;
   color: #3a3a3a;
 }
 .nav-link:hover {
@@ -87,6 +88,7 @@ nav{
 /* Banner styles */
 .banner-content{
   display: flex;
+  justify-content: space-between;
 }
 .banner-title{
   font-family: poppins;
@@ -97,4 +99,18 @@ nav{
   font-family: poppins;
   font-weight: 600;
   font-size: 16px;
+}
+.btn{
+  gap: 8px;
+  padding: 10px 24px;
+  color: #ffffff;
+  background-color: #e02c6d;
+  border-radius: 41px;
+  font-family: poppins;
+  font-weight: bold;
+  font-size: 16px;
+}
+.banner-img{
+  height: 414px;
+  width: 440px;
 }
