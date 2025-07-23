@@ -41,11 +41,10 @@
   font-weight: bold;
   font-style: normal;
 }
-body{
-  margin: 96px 120px;
-  color: #3a3a3a;
-}
 /* nav styles */
+header{
+  margin: 96px 120px;
+}
 nav{
   display: flex;
   justify-content: space-between;
@@ -123,9 +122,6 @@ nav{
   margin-top: 136px;
 }
 /* main styles */
-main{
-  margin: 100px;
-}
 #collection-title{
   font-family: poppins;
   font-weight: 600;
@@ -167,15 +163,69 @@ main{
   color: #787885;
 }
 .products{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 .see-more{
+  margin: 0 100px;
+  display: flex;
+  justify-content: end;
   font-family: poppins;
   font-weight: bold;
   font-size: 16px;
-  justify-self: right;
   color:#e02c6d;
+}
+/* Feature */
+.feature-container{
+  display: flex;
+  gap: 96px;
+  margin: 100px;
+}
+.feature-img{
+  border-radius: 7px;
+}
+.feature-title{
+  font-family: poppins;
+  font-weight: bold;
+  font-size: 38px;
+  color: #0A0826;
+}
+.feature-description{
+  font-family: poppins;
+  font-weight: bold;
+  font-size: 16px;
+  color: #6c6c6c;
+}
+/* footer */
+footer{
+  background-color: #0A0826;
+  margin: auto;
+}
+.footer-title{
+  font-family: poppins;
+  font-weight: bold;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+}
+.copyright{
+  font-family: manrope-bold;
+  font-size: 14px;
+  color: #D9DBE1;
+  text-align: center;
+}
+.footer-icon{
+  display: flex;
+  justify-content: center;
+}
+.footer-icon img{ 
+  vertical-align: middle;
+  margin: 5px 10px;
+  height: 32px;
+  width: 32px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  gap: 16px;
 }
